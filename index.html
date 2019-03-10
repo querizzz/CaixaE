@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+<header><title>Keren Web Site </title></header>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif;}
+    body,  html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    /* Create a Parallax Effect */
+    .bgimg1,.bgimg2,.bgimg3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    .bgimg1 {
+        background-image: url("bgimag1.jpg");
+        min-height: 100%;
+    }
+    /* Second image (Portfolio) */
+    .bgimg2 {
+        background-image: url("bgimg2.jpg");
+        min-height: 400px;
+    }
+    /* Third image (Contact) */
+    .bgimg3 {
+        background-image: url("bgimg3.jpg");
+        min-height: 400px;
+    }
+    .w3-wide {  letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg1,.bgimg2, .bgimg3 {
+            background-attachment: scroll;
+        }
+    }
+</style>
+<body>
+    <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#sobre" class="w3-bar-item w3-button w3-hide-small">  <i class="fa fa-user"></i> SOBRE</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO</a>
+                <a href="#contato" class="w3-bar-item w3-button w3-hide-small">  <i class="fa fa-envelope"></i> CONTATO</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"> 
+                  <i class="fa fa-search">PROCURAR</i>
+                </a>
+            </div>
+        </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#sobre" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE</a>
+                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+                <a href="#contato" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
+                <a href="#" class="w3-bar-item w3-button">PROCURAR</a>
+            </div>
+    
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> KEREN REBECKA </span>
+            <div class="w3-animate-zoom w3-white w3-center w3-xlarge w3-wide w3-animate-opacity">
+                    <a href="https://www.facebook.com/kerenRebecka"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/querizzz/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href="https://www.snapchat.com/l/pt-br/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                    <a href="https://twitter.com/querizzz"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                    <a href="https://www.linkedin.com/in/keren-rebecka-3a9466127/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>    
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-justify w3-align" id="sobre">
+        <h3 class="w3-center">SOBRE MIM</h3>
+        <p class="w3-center">
+            <em>Minha definição é o ecletismo</em>
+        </p>
+        <p>Se definir é complexo, pois não se trata apenas de características rotineiras, mas de compreender no íntimo quem somos, 
+          e aceitar quem você é, no estado mais abrangente possível. Sou marcada pela lentidão em alguns afazeres, principalmente os que precisam de segurança. 
+          Assim como a terra, sou firmes, estável e sólida. Até mesmo nos momentos em que a maioria das pessoas se deixariam levar pelas emoções.
+          Prefiro apostar na minha estabilidade. 
+          Sou muito cuidadosa e excessivamente crítica em minhas relações interpessoais, pessoais e profissionais.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p>
+                    <b>
+                        <i class="fa fa-user w3-margin-right"></i>Keren Rebecka Serafim Silva</b>
+                </p>
+                <br>
+                
+                <img src="C:\Users\keren\Desktop\Projeto EJECT\keren site\imagens\conceitual.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500"
+                    height="400">
+            </div>
+<!-- Hide this text on small devices -->
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>Bem Vindo(a) ao meu site. Meu nome é Keren, e apesar de já ter tido contado com HTML,
+           esse é a minha primeira experiência montando de fato um blog pessoal em HTML/CSS.
+          O uso dessa página como ferramenta profissional, é essêncial na divulgação do meu trabalho e de futuros projetos.
+          Sou estudante da Universidade Federal do Rio Grande so Norte (UFRN) desde 2016, curso o bacharelado em Ciência e Tecnologia, 
+          e futuramente ênfase em Engenharia Ambiental.
+          Tenha formação profissional em Técnica de Segurança do Trabalho, mesmo ainda não conseguindo exercer meu técnico, 
+          sei que ele ainda será de grande valia no meu currículo.
+           Tenho Experiência com linguagens como C++, apesar de não achar ser das melhores e mais atrativas. 
+           Gosto de trabalhar em equipe e de encarar desafios. Apaixonada por inovação e novas tecnologias.
+           Costumo investir em leituras proveitosas e espirituais no tempo livre, sem me esquecer das boas séries de humor.
+        </p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">Eu sou realmente boa em:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Fotografia</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">80%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Programação</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">70%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Lógica</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">60%</div>
+    </div>
+  </div>
+  
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">14+</span><br>
+      PARCEIROS
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">10+</span><br>
+      PROJETOS PRONTOS
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">33+</span><br>
+      CLIENTES SATISFEITOS
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">80+</span><br>
+      REUNIÕES
+    </div>
+  </div>
+  
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+  
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">UM POUCO DO MEU MUNDO</h3>
+    <p class="w3-center"><em>Aqui estão algumas das minhas ocupações.</em></p>
+  
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3 w3-third w3-container">
+        <img src="logotec.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tecnologia">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="cet.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CeT">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="ufrn.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="UFRN">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="got.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="got">
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="senai.jpg" style="width:100%"  class="w3-hover-opacity" >
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="mg.png" style="width:100%"  class="w3-hover-opacity" >
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="beats.jpg" style="width:100%"  class="w3-hover-opacity" >
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="meta.jpg" style="width:100%" class="w3-hover-opacity" >
+      </div>
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">CARREGUE MAIS</button>
+    </div>
+  </div>
+  
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contato">
+    <h3 class="w3-center">ONDE EU TRABALHO</h3>
+    <p class="w3-center"><em>Eu adoraria seu feedback!</em></p>
+  
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Natal, BR<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefone: +55 84994614430<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kerenrebecka@hotmail.com<br>
+        </div>
+        <p> Envie uma mensagem:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Mensagem">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar para o início</a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
